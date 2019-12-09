@@ -6,7 +6,7 @@ export interface IObjs {
 
 export class Objs implements IObjs {
   public merge(...items: any[]): any {
-    return items.reduce((x, y) => (Object.assign(x, y)));
+    return items.reduce((x, y) => Object.assign(x, y));
   }
 
   public isEmpty(obj: any): boolean {
